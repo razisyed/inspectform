@@ -8,6 +8,7 @@
 	},
 	onDeviceReady: function () {
 		app.receivedEvent('deviceready');
+		window.open = cordova.InAppBrowser.open;
         
 		// Here, we redirect to the web site.
         var ref = cordova.InAppBrowser.open('http://www.al3consulting.com/inspectform', '_self', 'location=no');
