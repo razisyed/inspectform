@@ -8,12 +8,10 @@
 	},
 	onDeviceReady: function () {
 		app.receivedEvent('deviceready');
-
+        
 		// Here, we redirect to the web site.
-		var targetUrl = "http://www.al3consulting.com/inspectform";
-		var bkpLink = document.getElementById("bkpLink");
-		bkpLink.setAttribute("href", targetUrl);		
-		window.location.replace(targetUrl);
+        var ref = cordova.InAppBrowser.open('http://www.al3consulting.com/inspectform', '_self', 'location=no');
+		
 	},
 	// Note: This code is taken from the Cordova CLI template.
 	receivedEvent: function (id) {
