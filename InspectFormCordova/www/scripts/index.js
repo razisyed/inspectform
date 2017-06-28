@@ -8,10 +8,8 @@
 	},
 	onDeviceReady: function () {
 		app.receivedEvent('deviceready');
-		window.open = cordova.InAppBrowser.open;
-        
-		// Here, we redirect to the web site.
-        //var ref = cordova.InAppBrowser.open('http://www.al3consulting.com/inspectform', '_self', 'location=no');
+		var ref = cordova.InAppBrowser;
+		ref.open('http://www.al3consulting.com/inspectform', '_self', 'location=no');
 		
 	},
 	// Note: This code is taken from the Cordova CLI template.
@@ -26,9 +24,5 @@
 		console.log('Received Event: ' + id);
 	}
 };
-
-document.getElementById("start-link").addEventListener("click", function(){
-	cordova.InAppBrowser.open('http://www.al3consulting.com/inspectform', '_self', 'location=no');
-});
 
 app.initialize();
