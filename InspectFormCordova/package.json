@@ -3,5 +3,20 @@
     "version": "1.0.0",
     "private": true,
     "dependencies": {
+        "cordova-android": "5.2.1",
+        "cordova-ios": "^4.4.0",
+        "cordova-plugin-statusbar": "^2.2.3",
+        "cordova-windows": "4.4.2"
+    },
+    "cordova": {
+        "platforms": [
+            "android",
+            "ios",
+            "windows"
+        ],
+        "plugins": {
+            "cordova-plugin-inappbrowser": {},
+            "cordova-plugin-statusbar": {}
+        }
     }
 }
