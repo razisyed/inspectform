@@ -7,16 +7,5 @@
       "password": "",
       "keystoreType": ""
     }
-  },
-  
-  "ios": {
-    "debug": {      
-      "developmentTeam": "WMG2QA4N4W"
-    },
-    "release": {
-      "developmentTeam": "FG35JLLMXX4A",
-      "codeSignIdentity": "iPhone Developer",
-      "packageType": "ad-hoc"
-    }
   }
 }
